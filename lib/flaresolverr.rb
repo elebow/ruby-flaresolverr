@@ -16,11 +16,12 @@ module FlareSolverr
       postData: ("todo" if method == :post) # TODO
     }.compact
 
-    puts args
+    response_json = Net::HTTP.post(URI("http://localhost:8191/v1"),
+                                   args.to_json,
+                                   { "Content-Type" => "application/json" })
+                             .body
 
-    Net::HTTP.post(URI("http://localhost:8191/v1"),
-                   args.to_json,
-                   { "Content-Type" => "application/json" })
+    JSON.parse(response_json, symbolize_names: true)[:solution]
   end
 
   def self.create_image

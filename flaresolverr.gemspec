@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["Eddie Lebow"]
   spec.email = ["elebow@users.noreply.github.com"]
 
-  spec.summary = "Ruby API for Flaresolverr proxy."
+  spec.summary = "Ruby API for FlareSolverr proxy."
   spec.homepage = "https://github.com/elebow/ruby-flaresolverr"
   spec.required_ruby_version = ">= 2.6.0"
 

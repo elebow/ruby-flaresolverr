@@ -1,0 +1,27 @@
+PATH
+  remote: .
+  specs:
+    flaresolverr (0.1.0)
+      docker-api (~> 2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    docker-api (2.2.0)
+      excon (>= 0.47.0)
+      multi_json
+    excon (0.96.0)
+    minitest (5.16.3)
+    multi_json (1.15.0)
+    rake (13.0.6)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  flaresolverr!
+  minitest (~> 5.0)
+  rake (~> 13.0)
+
+BUNDLED WITH
+   2.4.1

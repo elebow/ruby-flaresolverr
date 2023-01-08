@@ -21,7 +21,7 @@ module FlareSolverr
                                    { "Content-Type" => "application/json" })
                              .body
 
-    JSON.parse(response_json, symbolize_names: true)[:solution]
+    JSON.parse(response_json, symbolize_names: true)
   end
 
   def self.create_image

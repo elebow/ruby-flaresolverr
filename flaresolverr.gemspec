@@ -5,6 +5,7 @@ require_relative "lib/flaresolverr"
 Gem::Specification.new do |spec|
   spec.name = "flaresolverr"
   spec.version = FlareSolverr::VERSION
+  spec.licenses = ["MIT"]
   spec.authors = ["Eddie Lebow"]
   spec.email = ["elebow@users.noreply.github.com"]
 

@@ -5,7 +5,7 @@ require "json"
 require "net/http"
 
 module FlareSolverr
-  VERSION = "0.1.0"
+  VERSION = "0.1.1"
 
   def self.request(url, method: :get, cookies: nil)
     args = {
